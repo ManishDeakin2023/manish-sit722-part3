@@ -5,12 +5,14 @@ services:
     build: 
       context: ./book_catalog
       dockerfile: Dockerfile
+      args:
+        - NO_CACHE=true
     container_name: book_catalog_cntr
     ports:
      - "4010:5010"
     environment:
       - PORT=5010
-      - DATABASE_URL=postgresql://manish_project_part3_yn1w_user:BuFAtim9mJ0hIPSKTKMpvTgH4cowDier@dpg-crg2nk3v2p9s73a6cir0-a.oregon-postgres.render.com/manish_project_part3_yn1w
+      - DATABASE_URL=postgresql://manish_project_part3_k9ky_user:Ug5DGyVIHEzLPE7mEAql15jTWrFaESd2@dpg-crgitp2j1k6c739icpmg-a.oregon-postgres.render.com/manish_project_part3_k9ky
     restart: "no"
 
   inventory_management:
@@ -18,10 +20,12 @@ services:
     build: 
       context: ./inventory_management
       dockerfile: Dockerfile
+      args:
+        - NO_CACHE=true
     container_name: inventory_management_cntr
     ports:
      - "4020:5020"
     environment:
       - PORT=5020
-      - DATABASE_URL=postgresql://manish_project_part3_yn1w_user:BuFAtim9mJ0hIPSKTKMpvTgH4cowDier@dpg-crg2nk3v2p9s73a6cir0-a.oregon-postgres.render.com/manish_project_part3_yn1w
+      - DATABASE_URL=postgresql://manish_project_part3_k9ky_user:Ug5DGyVIHEzLPE7mEAql15jTWrFaESd2@dpg-crgitp2j1k6c739icpmg-a.oregon-postgres.render.com/manish_project_part3_k9ky
     restart: "no"
