@@ -22,7 +22,7 @@ spec:
         - name: PORT
           value: "5000"
         - name: DATABASE_URL
-          value: postgresql://manish_project_part3_yn1w_user:BuFAtim9mJ0hIPSKTKMpvTgH4cowDier@dpg-crg2nk3v2p9s73a6cir0-a.oregon-postgres.render.com/manish_project_part3_yn1w
+          value: postgresql://manish_n52d_user:6l18h8vEeKOfdHWB0UE00ryyd1eOorL2@dpg-crgka73qf0us73dn38n0-a.oregon-postgres.render.com/manish_n52d
 ---
 
 apiVersion: v1
@@ -63,7 +63,7 @@ spec:
         - name: PORT
           value: "5001"
         - name: DATABASE_URL
-          value: postgresql://manish_project_part3_yn1w_user:BuFAtim9mJ0hIPSKTKMpvTgH4cowDier@dpg-crg2nk3v2p9s73a6cir0-a.oregon-postgres.render.com/manish_project_part3_yn1w
+          value: postgresql://manish_n52d_user:6l18h8vEeKOfdHWB0UE00ryyd1eOorL2@dpg-crgka73qf0us73dn38n0-a.oregon-postgres.render.com/manish_n52d
 ---
 
 apiVersion: v1
